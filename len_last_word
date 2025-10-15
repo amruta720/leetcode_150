@@ -1,0 +1,9 @@
+'''
+58. Length of Last Word
+'''
+class Solution:
+    def lengthOfLastWord(self, s: str) -> int:
+        new_s = s.strip()
+        words = new_s.split(' ')
+        last_word = words[-1]
+        return len(last_word)
